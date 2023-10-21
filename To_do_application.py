@@ -2,13 +2,11 @@ import os
 import json
 from datetime import datetime
 
-# Define the filename for storing tasks
+
 TASKS_FILE = "tasks.json"
 
-# Initialize the tasks dictionary
 tasks = []
 
-# Check if the tasks file exists and load tasks
 if os.path.exists(TASKS_FILE):
     with open(TASKS_FILE, "r") as file:
         tasks = json.load(file)
